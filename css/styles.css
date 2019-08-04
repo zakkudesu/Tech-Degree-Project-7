@@ -1,12 +1,4 @@
 @charset "UTF-8";
-* {
-  box-sizing: border-box;
-}
-
-.grid-container {
-  display: grid;
-}
-
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -374,6 +366,54 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  color: #d3d1d1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "navigation" "main";
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  width: 100%;
+  background-color: #4506f0;
+}
+
+.navigation {
+  grid-area: navigation;
+  width: 100px;
+  height: 100%;
+  background-color: #53447c;
+}
+
+.main {
+  grid-area: main;
+  background-color: gray;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas: "header header" "navigation main";
+  }
+}
+img {
+  width: 75px;
+}
+
+svg {
+  width: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
