@@ -1,5 +1,5 @@
 img {
-    width: 75px;
+    width: 30px;
 }
 
 .bell{
@@ -8,11 +8,19 @@ img {
     padding-right: .25em;
 }
 
-svg, .icon-nav {
+
+.icon-nav {
     width: 30px;
+}
+
+
+svg{
+    width: 50px;
+    padding: .5em;
+    background-color: #9e7b9e;
+    // border-radius: 50%;
 }
 
 .profile-image{
     border-radius: 50%;
-    width: 50px;
 }

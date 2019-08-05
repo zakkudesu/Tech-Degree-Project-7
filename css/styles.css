@@ -386,7 +386,7 @@ table {
   justify-content: space-between;
   height: 60px;
   width: 100%;
-  color: #fff;
+  color: #e7e6e6;
   background-color: #9285b8;
 }
 
@@ -394,7 +394,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #cfcfcf;
+  background-color: #eeebeb;
   padding-right: 0.5em;
   height: 65px;
 }
@@ -486,7 +486,7 @@ select {
 }
 
 img {
-  width: 75px;
+  width: 30px;
 }
 
 .bell {
@@ -495,13 +495,18 @@ img {
   padding-right: 0.25em;
 }
 
-svg, .icon-nav {
+.icon-nav {
   width: 30px;
+}
+
+svg {
+  width: 50px;
+  padding: 0.5em;
+  background-color: #9e7b9e;
 }
 
 .profile-image {
   border-radius: 50%;
-  width: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */
