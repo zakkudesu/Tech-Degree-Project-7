@@ -374,7 +374,6 @@ table {
 
 .grid-container {
   display: grid;
-  color: black;
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-template-areas: "header" "navigation" "main";
@@ -384,9 +383,10 @@ table {
   grid-area: header;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 60px;
   width: 100%;
+  color: #fff;
   background-color: #9285b8;
 }
 
@@ -395,7 +395,8 @@ table {
   justify-content: space-between;
   align-items: center;
   background-color: #cfcfcf;
-  padding: 0.5em 0.5em;
+  padding-right: 0.5em;
+  height: 65px;
 }
 
 .traffic {
@@ -440,14 +441,48 @@ table {
     display: flex;
     flex-direction: column;
   }
+
+  .main-user {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .bell {
+    margin-left: 20em;
+  }
 }
 .header {
   color: #fff;
+}
+.header h3 {
+  margin-right: 1em;
+}
+
+.main-logo {
+  margin-left: 0.5em;
 }
 
 sup {
   font-size: 8px;
   top: -1.9em;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+button,
+select {
+  font-weight: 100;
+}
+
+.headline {
+  background-color: #fff;
+  padding: 0.75em 0.75em;
 }
 
 img {
@@ -456,6 +491,8 @@ img {
 
 .bell {
   width: 30px;
+  border-right: 1px solid #c2c0c0;
+  padding-right: 0.25em;
 }
 
 svg, .icon-nav {
