@@ -385,9 +385,24 @@ table {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 80px;
+  height: 60px;
   width: 100%;
-  background-color: #4506f0;
+  background-color: #9285b8;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cfcfcf;
+  padding: 0.5em 0.5em;
+}
+
+.traffic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0.5em;
 }
 
 .navigation {
@@ -400,7 +415,6 @@ table {
 
 .main {
   grid-area: main;
-  margin: 0.5em 0.5em;
 }
 
 @media (min-width: 768px) {
@@ -422,13 +436,18 @@ table {
   }
 
   .main {
+    grid-template-columns: 50%;
     display: flex;
     flex-direction: column;
-    margin: auto auto;
   }
 }
 .header {
   color: #fff;
+}
+
+sup {
+  font-size: 8px;
+  top: -1.9em;
 }
 
 img {
@@ -436,7 +455,7 @@ img {
 }
 
 .bell {
-  width: 40px;
+  width: 30px;
 }
 
 svg, .icon-nav {
@@ -445,6 +464,7 @@ svg, .icon-nav {
 
 .profile-image {
   border-radius: 50%;
+  width: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */
