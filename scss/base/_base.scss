@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 .grid-container{
     display: grid;
     grid-template-columns: 100%;
@@ -63,7 +62,7 @@
 
     .navigation{
         display: block;
-        padding-left: .75em;
+        padding-left: 1em;
         padding-right: auto;
         padding-top: .75em;
         padding-bottom: .75em;
