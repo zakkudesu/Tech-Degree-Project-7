@@ -446,7 +446,8 @@ h3 {
   }
 
   .navigation {
-    display: block;
+    flex-direction: column;
+    justify-content: start;
     padding-left: 1em;
     padding-right: auto;
     padding-top: 0.75em;
@@ -468,8 +469,8 @@ h3 {
     margin-left: auto;
   }
 
-  .bell {
-    margin-left: 20em;
+  .header {
+    justify-content: space-between;
   }
 }
 .header {
