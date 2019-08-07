@@ -6,7 +6,7 @@ const dailyCanvas = document.getElementById("daily-chart");
 // Alert Banner
 alert.innerHTML =
 `<div class="alert-banner">
-    <p><strong>Alert: </strong> You have <strong> 6 </strong> overdue tasks to complete.</p>
+    <p><strong>Alert: </strong> You have <strong> 8 </strong> new connections to approve.</p>
     <p class="alert-banner-close">x</p>
 </div>
 `
@@ -24,9 +24,14 @@ alert.addEventListener('click', e => {
 let trafficData = {
 labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3","4-10", "11-17", "18-24", "25-31"],
 datasets: [{
-		data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,2500],
-		backgroundColor: 'rgba(116, 119, 191, .3)',
-		borderWidth: 1,
+		data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1700,2800],
+        backgroundColor: 'rgba(116, 119, 191, .3)',
+        borderColor: '#b5b7e9',
+        borderWidth: 2,
+        lineTension: 0,
+        pointRadius: 7,
+        pointBorderWidth: 3,
+        pointBackgroundColor: '#fff'
 
 		}]
 };
@@ -36,7 +41,7 @@ let trafficOptions = {
     maintainAspectRatio: false,
 	aspectRatio: 2.5,
 	animation: {
-	    duration: 0
+	    duration: 1
 	},
 	scales: {
 		yAxes: [{
@@ -49,12 +54,8 @@ let trafficOptions = {
 	display: false
 	},
 	layout: {
-    padding: {
-        top: 10,
-        right: 10,
-        bottom: 10,
-        left: 10
-        }
+    padding: 12
+        
      }
 	};
 
@@ -110,7 +111,7 @@ const mobileData = {
     borderWidth: 0,
     backgroundColor: [
     '#7477BF',
-    '#78CF82',
+    '#00d100',
     '#51B6C8'
     ]
     }]

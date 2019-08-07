@@ -403,6 +403,13 @@ a :hover {
 h3 {
   padding-left: 0.7em;
   padding-right: 0.5em;
+  margin-top: 2.5em;
+  margin-bottom: 1.75em;
+}
+
+.traffic-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .traffic-nav {
@@ -416,12 +423,16 @@ h3 {
 
 .traffic-nav li {
   font-size: 1em;
-  color: #fff;
-  background-color: #00d100;
+  color: #948f8f;
   padding: 5px 10px 5px 10px;
   border-radius: 5px;
   margin-right: 10px;
   margin-bottom: 25px;
+}
+
+.traffic-nav li:hover {
+  color: #fff;
+  background-color: #00d100;
 }
 
 .widget-container-full {
@@ -533,10 +544,19 @@ select {
   font-weight: 100;
 }
 
+h2,
+h3 {
+  color: #948f8f;
+}
+
 .headline {
   background-color: #fff;
   padding: 0.75em 0.75em;
   font-weight: 375;
+}
+
+.profile-name {
+  color: #fff;
 }
 
 .alert-banner {
@@ -546,7 +566,9 @@ select {
   justify-content: space-between;
   padding-left: 1em;
   padding-right: 1.3em;
-  height: 60px;
+  height: 50px;
+  margin-left: 1em;
+  margin-top: 1em;
 }
 
 img {
@@ -560,7 +582,8 @@ img {
 }
 
 .icon-nav {
-  width: 20px;
+  margin-top: 1em;
+  width: 25px;
 }
 
 svg {
@@ -568,7 +591,7 @@ svg {
   padding: 0.5em;
   background-color: #9e7b9e;
   border-radius: 50%;
-  margin-right: 1em;
+  margin-right: 0.5em;
   margin-top: 0.5em;
 }
 

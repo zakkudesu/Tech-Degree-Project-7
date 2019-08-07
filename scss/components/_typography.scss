@@ -29,8 +29,16 @@ select {
     font-weight: 100;
 }
 
+h2,
+h3{
+    color: #948f8f;
+}
 .headline{
     background-color: #fff;
     padding: .75em .75em;
     font-weight: 375;
+}
+
+.profile-name{
+    color: #fff;
 }
