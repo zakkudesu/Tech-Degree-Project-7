@@ -1,6 +1,6 @@
 const alert = document.getElementById("alert");
-
-
+var trafficCanvas = document.getElementById("traffic-chart")
+const dailyCanvas = document.getElementById("daily-chart");
 
 
 // Alert Banner
@@ -20,7 +20,6 @@ alert.addEventListener('click', e => {
 
 
 //Traffic Chart
-var trafficCanvas = document.getElementById("traffic-chart")
 
 let trafficData = {
 labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3","4-10", "11-17", "18-24", "25-31"],
@@ -68,7 +67,6 @@ let trafficChart = new Chart(trafficCanvas, {
 
 //Bar Graph
 
-const dailyCanvas = document.getElementById("daily-chart");
 
 // data for daily traffic bar chart
 const dailyData = {

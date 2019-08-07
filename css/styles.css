@@ -372,6 +372,14 @@ table {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #9285b8;
+}
+a :hover {
+  cursor: pointer;
+}
+
 .header {
   grid-area: header;
   display: flex;
@@ -439,6 +447,21 @@ h3 {
   grid-template-areas: "header" "navigation" "main";
 }
 
+.social-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-container .social-box {
+  display: flex;
+  flex-grow: 1;
+  background-color: #fbfbfb;
+  border: 1px solid #d1d1d1;
+  border-radius: 1%;
+  color: #7377bf;
+  justify-content: center;
+  margin: 1em;
+}
+
 @media (min-width: 768px) {
   .grid-container {
     grid-template-columns: 55px 1fr;
@@ -462,6 +485,10 @@ h3 {
     grid-template-columns: 50%;
     display: flex;
     flex-direction: column;
+  }
+
+  .traffic-chart {
+    display: flex;
   }
 
   .side-by-side {
@@ -540,6 +567,9 @@ svg {
   width: 50px;
   padding: 0.5em;
   background-color: #9e7b9e;
+  border-radius: 50%;
+  margin-right: 1em;
+  margin-top: 0.5em;
 }
 
 .profile-image {
