@@ -39,7 +39,6 @@ a{
 h3{
     padding-left: .7em;
     padding-right: .5em;
-    margin-top: 2.5em;
     margin-bottom: 1.75em;
 }
 
@@ -47,6 +46,12 @@ h3{
 .traffic-header{
     display: flex;
     justify-content: space-between;
+}
+
+.widget-container-full{
+    padding-bottom: 1.25em;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .traffic-nav{
@@ -148,13 +153,17 @@ h3{
     }
 
     .main{
-        grid-template-columns: 50%;
         display: flex;
         flex-direction: column;
     }
 
     .traffic-chart{
         display: flex;
+    }
+
+    .stats{
+        padding-bottom: 3em;
+        border-top: $borderStyle;
     }
     
     .side-by-side{
@@ -165,18 +174,49 @@ h3{
     .daily,
     .mobile-users {
         flex-direction: row;
-        width: 40%;
+        width: 30%;
         flex-wrap: nowrap;
+        flex-grow: 1;
+        padding-bottom: 4em;
+        border-top: $borderStyle;
     }
+
+    .daily{
+        border-right: $borderStyle;
+    }
+
+    .members,
+    .recent-activity{
+        flex-grow: 1;
+        width: 35%;
+        padding-left: 1.5em;
+        border-top: $borderStyle;
+    }
+
+    .members{
+        border-right: $borderStyle;
+    }
+
 
     .bottom{
         display: flex;
         justify-content: space-evenly;
+        border-top: $borderStyle;
+
+        .message, .settings {
+            width: 35%;
+            flex-grow: 1;
+            padding-left: 1.5em;
+            padding-bottom: 2em;
+        }
 
         .message {
-            width: 35%;
+            border-right: $borderStyle;
         }
+
     }
+
+
 
 }
       

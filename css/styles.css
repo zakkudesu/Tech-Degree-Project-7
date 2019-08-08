@@ -408,13 +408,18 @@ a :hover {
 h3 {
   padding-left: 0.7em;
   padding-right: 0.5em;
-  margin-top: 2.5em;
   margin-bottom: 1.75em;
 }
 
 .traffic-header {
   display: flex;
   justify-content: space-between;
+}
+
+.widget-container-full {
+  padding-bottom: 1.25em;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .traffic-nav {
@@ -505,13 +510,17 @@ h3 {
   }
 
   .main {
-    grid-template-columns: 50%;
     display: flex;
     flex-direction: column;
   }
 
   .traffic-chart {
     display: flex;
+  }
+
+  .stats {
+    padding-bottom: 3em;
+    border-top: 1px solid #cfcfcf83;
   }
 
   .side-by-side {
@@ -522,16 +531,42 @@ h3 {
   .daily,
 .mobile-users {
     flex-direction: row;
-    width: 40%;
+    width: 30%;
     flex-wrap: nowrap;
+    flex-grow: 1;
+    padding-bottom: 4em;
+    border-top: 1px solid #cfcfcf83;
+  }
+
+  .daily {
+    border-right: 1px solid #cfcfcf83;
+  }
+
+  .members,
+.recent-activity {
+    flex-grow: 1;
+    width: 35%;
+    padding-left: 1.5em;
+    border-top: 1px solid #cfcfcf83;
+  }
+
+  .members {
+    border-right: 1px solid #cfcfcf83;
   }
 
   .bottom {
     display: flex;
     justify-content: space-evenly;
+    border-top: 1px solid #cfcfcf83;
+  }
+  .bottom .message, .bottom .settings {
+    width: 35%;
+    flex-grow: 1;
+    padding-left: 1.5em;
+    padding-bottom: 2em;
   }
   .bottom .message {
-    width: 35%;
+    border-right: 1px solid #cfcfcf83;
   }
 }
 .form-field,
@@ -586,6 +621,8 @@ h3 {
   margin-top: 1.5em;
 }
 
+#members,
+#recent,
 #message,
 #settings {
   padding-left: 0;
