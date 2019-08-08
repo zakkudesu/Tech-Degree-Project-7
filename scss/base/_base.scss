@@ -105,9 +105,21 @@ h3{
         border-radius: 1%;
 	    color: #7377bf;
 	    justify-content: center;
-	    margin: 1em;
+        margin: 1em;
+        padding: .75em;
+
+        .social-text p{
+            margin: 0;
+        }
+        
+        .social-text p:nth-child(2) {
+            font-size: 2em;
+
+        }
     }
+
 }
+
 
 @media (min-width: 768px){
     .grid-container{
@@ -155,6 +167,11 @@ h3{
     .bottom{
         display: flex;
         justify-content: space-evenly;
+
+        .message {
+            width: 35%;
+        }
     }
+
 }
       

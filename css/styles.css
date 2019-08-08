@@ -471,6 +471,13 @@ h3 {
   color: #7377bf;
   justify-content: center;
   margin: 1em;
+  padding: 0.75em;
+}
+.social-container .social-box .social-text p {
+  margin: 0;
+}
+.social-container .social-box .social-text p:nth-child(2) {
+  font-size: 2em;
 }
 
 @media (min-width: 768px) {
@@ -518,7 +525,16 @@ h3 {
     display: flex;
     justify-content: space-evenly;
   }
+  .bottom .message {
+    width: 35%;
+  }
 }
+.form-field,
+.form-area,
+#send {
+  display: block;
+}
+
 .header {
   color: #fff;
 }
@@ -562,6 +578,11 @@ h3 {
 
 .profile-name {
   color: #fff;
+}
+
+#message,
+#settings {
+  padding-left: 0;
 }
 
 .alert-banner {
