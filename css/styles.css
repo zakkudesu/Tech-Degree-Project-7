@@ -384,11 +384,16 @@ a :hover {
   grid-area: header;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 60px;
   width: 100%;
   color: #e7e6e6;
   background-color: #9285b8;
+}
+
+.main-logo {
+  justify-self: flex-start;
+  flex-grow: 1;
 }
 
 .main-header {
@@ -578,6 +583,7 @@ h3 {
 
 .profile-name {
   color: #fff;
+  margin-top: 1.5em;
 }
 
 #message,
@@ -1288,6 +1294,7 @@ img {
   width: 30px;
   border-right: 1px solid #c2c0c0;
   padding-right: 0.25em;
+  margin-right: 0.25em;
 }
 
 .icon-nav {

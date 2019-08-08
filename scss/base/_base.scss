@@ -15,11 +15,16 @@ a{
     grid-area: header;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 60px;
     width: 100%;
     color: #e7e6e6;
     background-color: #9285b8;
+}
+
+.main-logo{
+    justify-self: flex-start;
+    flex-grow: 1;
 }
 
 .main-header{
