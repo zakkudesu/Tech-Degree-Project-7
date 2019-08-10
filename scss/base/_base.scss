@@ -36,6 +36,11 @@ a{
     height: 65px;  
 }
 
+.main{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 h3{
     padding-left: .7em;
     padding-right: .5em;
@@ -80,13 +85,15 @@ h3{
     display: flex;
 }
 
+.mobile-users{
+    padding-bottom: 1em;
+}
 
 .navigation {
     grid-area: navigation;
     display: flex;
     justify-content: space-around;
     background-color: #53447c;
-    padding: .25em;
 }
 
 .main {
@@ -130,6 +137,20 @@ h3{
 
 }
 
+.members,
+.recent-activity,
+.message,
+.settings
+ {
+    padding: 1em;
+}
+
+.members-container{
+    text-align: center;
+    padding-top: 1em;
+}
+
+
 
 @media (min-width: 768px){
     .grid-container{
@@ -142,15 +163,19 @@ h3{
     .navigation{
         flex-direction: column;
         justify-content: start;
-        padding-left: 1em;
         padding-right: auto;
         padding-top: .75em;
         padding-bottom: .75em;
+
+        a{
+            text-align: center;
+        }
     }
 
     .icon-nav{
         margin-bottom: 1.5em;
     }
+
 
     .main{
         display: flex;
@@ -197,6 +222,10 @@ h3{
         border-right: $borderStyle;
     }
 
+    .members-container{
+    text-align: left;
+    padding-top: 0;
+    }
 
     .bottom{
         display: flex;

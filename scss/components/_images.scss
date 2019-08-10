@@ -12,9 +12,15 @@ img {
 
 
 .icon-nav {
-    margin-top: 1em;
     width: 25px;
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
+
+.icon-nav:hover{
+    border-top: 1px solid lime;
+}
+
 
 
 svg{

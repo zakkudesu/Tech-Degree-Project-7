@@ -405,6 +405,11 @@ a :hover {
   height: 65px;
 }
 
+.main {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 h3 {
   padding-left: 0.7em;
   padding-right: 0.5em;
@@ -449,12 +454,15 @@ h3 {
   display: flex;
 }
 
+.mobile-users {
+  padding-bottom: 1em;
+}
+
 .navigation {
   grid-area: navigation;
   display: flex;
   justify-content: space-around;
   background-color: #53447c;
-  padding: 0.25em;
 }
 
 .main {
@@ -490,6 +498,18 @@ h3 {
   font-size: 2em;
 }
 
+.members,
+.recent-activity,
+.message,
+.settings {
+  padding: 1em;
+}
+
+.members-container {
+  text-align: center;
+  padding-top: 1em;
+}
+
 @media (min-width: 768px) {
   .grid-container {
     grid-template-columns: 55px 1fr;
@@ -499,10 +519,12 @@ h3 {
   .navigation {
     flex-direction: column;
     justify-content: start;
-    padding-left: 1em;
     padding-right: auto;
     padding-top: 0.75em;
     padding-bottom: 0.75em;
+  }
+  .navigation a {
+    text-align: center;
   }
 
   .icon-nav {
@@ -552,6 +574,11 @@ h3 {
 
   .members {
     border-right: 1px solid #cfcfcf83;
+  }
+
+  .members-container {
+    text-align: left;
+    padding-top: 0;
   }
 
   .bottom {
@@ -1352,8 +1379,13 @@ img {
 }
 
 .icon-nav {
-  margin-top: 1em;
   width: 25px;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.icon-nav:hover {
+  border-top: 1px solid lime;
 }
 
 svg {
