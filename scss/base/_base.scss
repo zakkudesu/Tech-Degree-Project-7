@@ -162,14 +162,9 @@ h3{
 
     .navigation{
         flex-direction: column;
-        justify-content: start;
-        padding-right: auto;
-        padding-top: .75em;
-        padding-bottom: .75em;
+        justify-content: flex-start;
+        text-align: center;
 
-        a{
-            text-align: center;
-        } 
     }
 
     .icon-nav{
@@ -244,8 +239,6 @@ h3{
         }
 
     }
-
-
 
 }
       

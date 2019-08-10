@@ -7,8 +7,9 @@
 #userField,
 #messageField,
 #send {
-    width: 95%;
-    border: 1px solid gainsboro;
+    width: 100%;
+    border: 1px solid #f5f3f3;
+    background-color: #f5f3f3;
     margin-left: auto;
     margin-right: 1.5em;
     margin-bottom: 1em;
@@ -19,4 +20,31 @@
 .email-toggle label,
 .profile-toggle label{
     width:20%;
+}
+
+#timezone{
+    width: 100%;
+    padding: .5em;
+    border: 1px solid #f5f3f3;
+    background-color: #f5f3f3;
+    margin-top: 1em;
+}
+
+#save,
+#cancel{
+    width: 40%;
+    background-color: #f5f3f3;
+    padding:1em;
+    margin-top: 1em;
+    border-radius: 4px;
+    border: 1px solid #f5f3f3;
+}
+
+#save{
+    margin-right: 1em;
+}
+
+.settings-button{
+    display: flex;
+    justify-content: space-evenly;
 }

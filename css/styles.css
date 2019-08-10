@@ -518,12 +518,7 @@ h3 {
 
   .navigation {
     flex-direction: column;
-    justify-content: start;
-    padding-right: auto;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
-  }
-  .navigation a {
+    justify-content: flex-start;
     text-align: center;
   }
 
@@ -595,6 +590,18 @@ h3 {
   .bottom .message {
     border-right: 1px solid #cfcfcf83;
   }
+
+  #save,
+#cancel {
+    padding: 1em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #save {
+    margin-right: 1em;
+  }
 }
 .form-field,
 .form-area,
@@ -605,8 +612,9 @@ h3 {
 #userField,
 #messageField,
 #send {
-  width: 95%;
-  border: 1px solid gainsboro;
+  width: 100%;
+  border: 1px solid #f5f3f3;
+  background-color: #f5f3f3;
   margin-left: auto;
   margin-right: 1.5em;
   margin-bottom: 1em;
@@ -617,6 +625,33 @@ h3 {
 .email-toggle label,
 .profile-toggle label {
   width: 20%;
+}
+
+#timezone {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #f5f3f3;
+  background-color: #f5f3f3;
+  margin-top: 1em;
+}
+
+#save,
+#cancel {
+  width: 40%;
+  background-color: #f5f3f3;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 4px;
+  border: 1px solid #f5f3f3;
+}
+
+#save {
+  margin-right: 1em;
+}
+
+.settings-button {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .header {
