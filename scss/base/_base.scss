@@ -148,19 +148,32 @@ h3{
 .members-container,
 .activity-container{
     display: flex;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: space-between;
+    margin-bottom: .75em;
 
     p{
         margin-top: 0;
     }
+
 }
 
 .members-text{
+    margin-left: 8%;
+    margin-right: auto;
+
     p{
+        margin-bottom: 0;
         margin-top: 0;
     }
+
+    :nth-child(2){
+        font-size: smaller;
+    }
+
+
 }
+
+
 
 
 
@@ -180,7 +193,7 @@ h3{
     }
 
     .icon-nav{
-        margin-bottom: 1.5em;
+        margin-top: 1em;
     }
 
 
@@ -221,7 +234,6 @@ h3{
     .recent-activity{
         flex-grow: 1;
         width: 35%;
-        padding-left: 1.5em;
         border-top: $borderStyle;
     }
 
@@ -234,7 +246,8 @@ h3{
         justify-content: space-evenly;
         border-top: $borderStyle;
 
-        .message, .settings {
+        .message, 
+        .settings {
             width: 35%;
             flex-grow: 1;
             padding-left: 1.5em;

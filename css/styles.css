@@ -505,9 +505,27 @@ h3 {
   padding: 1em;
 }
 
-.members-container {
-  text-align: center;
-  padding-top: 1em;
+.members-container,
+.activity-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75em;
+}
+.members-container p,
+.activity-container p {
+  margin-top: 0;
+}
+
+.members-text {
+  margin-left: 8%;
+  margin-right: auto;
+}
+.members-text p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.members-text :nth-child(2) {
+  font-size: smaller;
 }
 
 @media (min-width: 768px) {
@@ -523,7 +541,7 @@ h3 {
   }
 
   .icon-nav {
-    margin-bottom: 1.5em;
+    margin-top: 1em;
   }
 
   .main {
@@ -563,7 +581,6 @@ h3 {
 .recent-activity {
     flex-grow: 1;
     width: 35%;
-    padding-left: 1.5em;
     border-top: 1px solid #cfcfcf83;
   }
 
@@ -571,17 +588,13 @@ h3 {
     border-right: 1px solid #cfcfcf83;
   }
 
-  .members-container {
-    text-align: left;
-    padding-top: 0;
-  }
-
   .bottom {
     display: flex;
     justify-content: space-evenly;
     border-top: 1px solid #cfcfcf83;
   }
-  .bottom .message, .bottom .settings {
+  .bottom .message,
+.bottom .settings {
     width: 35%;
     flex-grow: 1;
     padding-left: 1.5em;
@@ -589,18 +602,6 @@ h3 {
   }
   .bottom .message {
     border-right: 1px solid #cfcfcf83;
-  }
-
-  #save,
-#cancel {
-    padding: 1em;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #save {
-    margin-right: 1em;
   }
 }
 .form-field,
@@ -1427,14 +1428,9 @@ img {
 }
 
 .icon-nav {
-  width: 30px;
-  padding-bottom: 1em;
-  padding-top: 1em;
   transition: 0.1s ease-in;
-}
-
-.icon-nav:hover {
-  border-top: 1px solid lime;
+  height: 20px;
+  width: 20px;
 }
 
 svg {
