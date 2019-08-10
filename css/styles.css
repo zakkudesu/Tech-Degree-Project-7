@@ -643,6 +643,7 @@ h3 {
   margin-top: 1em;
   border-radius: 4px;
   border: 1px solid #f5f3f3;
+  transition: 0.3s ease-in;
 }
 
 #save {
@@ -652,6 +653,17 @@ h3 {
 .settings-button {
   display: flex;
   justify-content: space-evenly;
+}
+
+#send {
+  transition: 0.3s ease-in;
+}
+
+#send:hover,
+#save:hover,
+#cancel:hover {
+  background-color: #9285b8;
+  color: #fff;
 }
 
 .header {
@@ -1404,6 +1416,7 @@ h3 {
 /*# sourceMappingURL=toggle-switch.css.map */
 img {
   width: 30px;
+  height: 30px;
 }
 
 .bell {
@@ -1414,9 +1427,10 @@ img {
 }
 
 .icon-nav {
-  width: 25px;
+  width: 30px;
   padding-bottom: 1em;
   padding-top: 1em;
+  transition: 0.1s ease-in;
 }
 
 .icon-nav:hover {

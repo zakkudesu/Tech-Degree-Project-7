@@ -145,9 +145,21 @@ h3{
     padding: 1em;
 }
 
-.members-container{
+.members-container,
+.activity-container{
+    display: flex;
+    justify-content: space-around;
     text-align: center;
-    padding-top: 1em;
+
+    p{
+        margin-top: 0;
+    }
+}
+
+.members-text{
+    p{
+        margin-top: 0;
+    }
 }
 
 
@@ -215,11 +227,6 @@ h3{
 
     .members{
         border-right: $borderStyle;
-    }
-
-    .members-container{
-    text-align: left;
-    padding-top: 0;
     }
 
     .bottom{

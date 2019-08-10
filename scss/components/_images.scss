@@ -1,5 +1,6 @@
 img {
     width: 30px;
+    height: 30px;
 }
 
 .bell{
@@ -12,9 +13,10 @@ img {
 
 
 .icon-nav {
-    width: 25px;
+    width: 30px;
     padding-bottom: 1em;
     padding-top: 1em;
+    transition: .1s ease-in;
 }
 
 .icon-nav:hover{
