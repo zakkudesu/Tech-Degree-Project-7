@@ -521,6 +521,8 @@ h3 {
 .members-text p {
   margin-bottom: 0;
   margin-top: 0;
+  justify-content: flex-end;
+  margin-right: 1em;
 }
 .members-text :nth-child(2) {
   font-size: smaller;
@@ -1466,6 +1468,7 @@ img {
   border-right: 1px solid #c2c0c0;
   padding-right: 0.25em;
   margin-right: 0.25em;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .icon-nav {
