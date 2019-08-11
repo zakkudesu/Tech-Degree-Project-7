@@ -17,9 +17,23 @@
     padding: 1em;
 }
 
+.email-toggle,
+.profile-toggle{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.email-toggle p,
+.profile-toggle p {
+  flex-basis: 35%;
+  line-height: 0;
+  margin-bottom: 45px;
+}
+
 .email-toggle label,
-.profile-toggle label{
-    width:20%;
+.profile-toggle label {
+  flex-basis: 20%;
 }
 
 #timezone{
