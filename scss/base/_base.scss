@@ -111,7 +111,6 @@ h3{
 }
 
 .social-container{
-    display: flex;
     justify-content: space-evenly;
 
     .social-box{
@@ -194,6 +193,10 @@ h3{
 
     .icon-nav{
         margin-top: 1em;
+    }
+
+    .social-container{
+        display: flex;
     }
 
 
