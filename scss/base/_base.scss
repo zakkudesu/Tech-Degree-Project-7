@@ -60,13 +60,10 @@ h3{
 }
 
 .traffic-nav{
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin-right: 1.25em;
-    list-style-type: none;
-}
+   list-style-type: none;
+   margin-left: auto;
+   margin-right: auto;
+ }
 .traffic-nav li{
     font-size: 1em;
     color: #948f8f;
@@ -174,8 +171,6 @@ h3{
 
 
 
-
-
 @media (min-width: 768px){
     .grid-container{
         grid-template-columns: 55px 1fr;
@@ -191,8 +186,25 @@ h3{
 
     }
 
+    .traffic-nav{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-right: .1%;
+    }
+
     .icon-nav{
         margin-top: 1em;
+    }
+
+    .alert-banner{
+        display: flex;
+    }
+
+    .alert-banner-close{
+        padding-left: 0;
+        margin-top: 0;
     }
 
     .social-container{
