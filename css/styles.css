@@ -378,7 +378,6 @@ table {
   align-items: center;
   justify-content: flex-end;
   height: 60px;
-  width: 100%;
   color: #e7e6e6;
   background-color: #9285b8;
 }
@@ -395,11 +394,6 @@ table {
   background-color: #eeebeb;
   padding-right: 0.5em;
   height: 65px;
-}
-
-.main {
-  padding-left: 1em;
-  padding-right: 1em;
 }
 
 a {
@@ -421,12 +415,12 @@ h3 {
 .traffic-header {
   display: flex;
   justify-content: space-between;
+  width: 100vw;
 }
 
 .widget-container-full {
   padding-bottom: 1.25em;
-  margin-right: auto;
-  margin-left: auto;
+  width: 100vw;
 }
 
 .traffic-nav {
@@ -435,6 +429,7 @@ h3 {
   list-style-type: none;
   margin-left: auto;
   margin-right: 1%;
+  justify-content: flex-end;
 }
 
 .traffic-nav li {
@@ -572,16 +567,19 @@ h3 {
 
   .traffic-chart {
     display: flex;
+    width: 100vw;
   }
 
   .stats {
     padding-bottom: 3em;
     border-top: 1px solid #cfcfcf83;
+    width: 100vw;
   }
 
   .side-by-side {
     display: flex;
     justify-content: space-around;
+    width: 100vw;
   }
 
   .daily,
@@ -614,14 +612,16 @@ h3 {
     justify-content: space-evenly;
     border-top: 1px solid #cfcfcf83;
   }
-  .bottom .message,
-.bottom .settings {
+
+  .message,
+.settings {
     width: 35%;
     flex-grow: 1;
     padding-left: 1.5em;
     padding-bottom: 2em;
   }
-  .bottom .message {
+
+  .message {
     border-right: 1px solid #cfcfcf83;
   }
 }
