@@ -1,25 +1,28 @@
 img {
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 .bell{
     width: 30px;
     border-right: 1px solid #c2c0c0;
-    padding-right: .25em;
+    padding-right: .18em;
     margin-right: .25em;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: border-right .5s ease-out;
+    cursor: pointer;
     
 }
 
 .bell:hover{
-    
+    border-right: 2px solid lime;
+
 }
 
 .icon-nav {
-    transition: .1s ease-in;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
+    padding-bottom: .1em;
 }
 
 

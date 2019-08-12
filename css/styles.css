@@ -372,14 +372,6 @@ table {
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: #9285b8;
-}
-a :hover {
-  cursor: pointer;
-}
-
 .header {
   grid-area: header;
   display: flex;
@@ -408,6 +400,16 @@ a :hover {
 .main {
   padding-left: 1em;
   padding-right: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #9285b8;
+  transition: border-bottom 0.5s ease-out;
+}
+a :hover {
+  cursor: pointer;
+  border-bottom: 1px solid lime;
 }
 
 h3 {
@@ -447,6 +449,7 @@ h3 {
 .traffic-nav li:hover {
   color: #fff;
   background-color: #00d100;
+  cursor: pointer;
 }
 
 .widget-container-full {
@@ -646,6 +649,7 @@ h3 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
+  width: 35rem;
 }
 
 .profile-toggle {
@@ -773,6 +777,7 @@ h3 {
 .alert-banner-close {
   margin-top: -1.2em;
   padding-left: 100%;
+  cursor: pointer;
 }
 
 /*
@@ -1461,20 +1466,26 @@ h3 {
 img {
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 .bell {
   width: 30px;
   border-right: 1px solid #c2c0c0;
-  padding-right: 0.25em;
+  padding-right: 0.18em;
   margin-right: 0.25em;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: border-right 0.5s ease-out;
+  cursor: pointer;
+}
+
+.bell:hover {
+  border-right: 2px solid lime;
 }
 
 .icon-nav {
-  transition: 0.1s ease-in;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
+  padding-bottom: 0.1em;
 }
 
 svg {
