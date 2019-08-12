@@ -24,7 +24,7 @@ alert.addEventListener('click', e => {
 let trafficData = {
 labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3","4-10", "11-17", "18-24", "25-31"],
 datasets: [{
-		data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1700,2800],
+		data: [750, 1250, 900, 2000, 1500, 1750, 1250, 1850, 2250, 1700,2800],
         backgroundColor: 'rgba(116, 119, 191, .3)',
         borderColor: '#b5b7e9',
         borderWidth: 2,
@@ -74,7 +74,7 @@ const dailyData = {
     labels: ["S", "M", "T", "W", "T", "F", "S"],
     datasets: [{
             label: '# of Hits',
-            data: [75, 115, 175, 125, 225, 200, 100],
+            data: [75, 115, 175, 190, 225, 200, 100],
             backgroundColor: '#7477BF',
             borderWidth: 1
             }]
@@ -99,7 +99,7 @@ let dailyChart = new Chart(dailyCanvas, {
         options: dailyOptions
 });
 
-//Donught Graph
+//Doughnut Graph
 
 const mobileCanvas = document.getElementById("mobile-users");
 
@@ -133,3 +133,6 @@ let mobileChart = new Chart(mobileCanvas, {
     options: mobileOptions
 });
 
+//Send Confirmation
+// Create a “Send” button and use JS to allow you to submit the form and display a confirmation the message was sent. You won't actually submit the form, just simulate the action using JavaScript.
+// Use JS to display error messages if a user isn’t selected or message field is empty.
