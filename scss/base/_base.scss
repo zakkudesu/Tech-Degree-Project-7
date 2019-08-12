@@ -48,12 +48,12 @@ h3{
 .traffic-header{
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
 }
 
 .widget-container-full{
     padding-bottom: 1.25em;
-    width: 100vw;
+    width: calc(100vw -55px);
 
 }
 
@@ -221,19 +221,27 @@ h3{
 
     .traffic-chart{
         display: flex;
-        width: 100vw;
+        width: calc(100vw- 55px);
     }
 
     .stats{
         padding-bottom: 3em;
         border-top: $borderStyle;
-        width: 100vw;
+        width: 100%;
     }
     
     .side-by-side{
         display: flex;
         justify-content: space-around;
-        width: 100vw;
+        width: 100%;
+    }
+
+    .widget-container-full{
+        width: calc(100vw - 55px);
+    }
+
+    .widget-container-half{
+        width: calc((100vw - 55px) / 2)
     }
 
     .daily,
