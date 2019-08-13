@@ -146,11 +146,11 @@ sendMessage.addEventListener('click', (e)=> {
     const denyMessage = document.createElement('p');
     denyMessage.textContent = 'Please complete all sections of the form before sending';
     const sendMessage = document.createElement('p');
-    sendMessage.textContent = 'Your message was sent successfully';
+    sendMessage.textContent = 'Your message was sent';
 
     if (messageUserSearch.value === "" || messageUser.value === ""){
         e.preventDefault();
-        messageContainer.appendChild(denyMessage)
+        messageContainer.appendChild(denyMessage);
 
     } else {
         e.preventDefault();
