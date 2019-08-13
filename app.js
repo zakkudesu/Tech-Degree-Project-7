@@ -133,6 +133,29 @@ let mobileChart = new Chart(mobileCanvas, {
     options: mobileOptions
 });
 
-//Send Confirmation
-// Create a “Send” button and use JS to allow you to submit the form and display a confirmation the message was sent. You won't actually submit the form, just simulate the action using JavaScript.
-// Use JS to display error messages if a user isn’t selected or message field is empty.
+
+//Send Message Confirmation
+
+const messageUserSearch = document.getElementById("userField");
+const messageUser = document.getElementById("messageField");
+const sendMessage = document.getElementById("send");
+const messageContainer = document.getElementById("messageContainer");
+
+
+sendMessage.addEventListener('click', (e)=> {
+    const denyMessage = document.createElement('p');
+    denyMessage.textContent = 'Please complete all sections of the form before sending';
+    const sendMessage = document.createElement('p');
+    sendMessage.textContent = 'Your message was sent successfully';
+
+    if (messageUserSearch.value === "" || messageUser.value === ""){
+        e.preventDefault();
+        messageContainer.appendChild(denyMessage)
+
+    } else {
+        e.preventDefault();
+        messageContainer.appendChild(sendMessage);
+    }
+
+});
+
