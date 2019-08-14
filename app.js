@@ -145,6 +145,7 @@ const messageContainer = document.getElementById("messageContainer");
 sendMessage.addEventListener('click', (e)=> {
     const denyMessage = document.createElement('p');
     denyMessage.textContent = 'Please complete all sections of the form';
+    denyMessage.className = 'remove'
     const sendMessage = document.createElement('p');
     sendMessage.textContent = 'Your message was sent';
 
@@ -154,6 +155,7 @@ sendMessage.addEventListener('click', (e)=> {
 
     } else {
         e.preventDefault();
+        document.querySelector('.remove').innerHTML = '';
         messageContainer.appendChild(sendMessage);
     }
 
