@@ -387,6 +387,11 @@ table {
   flex-grow: 1;
 }
 
+.profile {
+  border-right: 1px solid #c2c0c0;
+  margin-right: 0.4em;
+}
+
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -1479,17 +1484,15 @@ img {
 
 .bell {
   width: 30px;
-  border-right: 1px solid #c2c0c0;
   padding-right: 0.18em;
-  margin-right: 0.25em;
-  transition: border-right 0.5s ease-out;
+  transition: transform 0.5s ease-out;
   cursor: pointer;
 }
 
 .dot {
   position: relative;
   top: -18px;
-  right: 21px;
+  right: 16px;
   padding: 2px;
   border-radius: 50%;
   background: lime;
@@ -1499,7 +1502,7 @@ img {
 }
 
 .bell:hover {
-  border-right: 2px solid lime;
+  transform: scale(0.9);
 }
 
 .icon-nav {
