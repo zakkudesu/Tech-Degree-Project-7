@@ -1485,7 +1485,7 @@ img {
 .bell {
   width: 30px;
   padding-right: 0.18em;
-  transition: transform 0.5s ease-out;
+  transition: transform 0.1s ease;
   cursor: pointer;
 }
 
@@ -1502,7 +1502,7 @@ img {
 }
 
 .bell:hover {
-  transform: scale(0.9);
+  transform: scale(0.96);
 }
 
 .icon-nav {
