@@ -1,4 +1,4 @@
-//Base Styles
+//Base Styles and Mobile First Design 
 *{
     box-sizing: border-box;
 }
@@ -181,7 +181,7 @@ h3{
 }
 
 
-// Larger Screens
+// Larger Screens Tablets & Desktops
 @media (min-width: 768px){
     .grid-container{
         grid-template-columns: 55px 1fr;

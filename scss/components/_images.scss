@@ -10,13 +10,24 @@ img {
     border-right: 1px solid #c2c0c0;
     padding-right: .18em;
     margin-right: .25em;
-    transition: border-right .5s ease-out;
+    transition: scale .1s ease-out;
     cursor: pointer;
-    
+}
+
+.dot{
+    position: relative;
+    top: -18px;
+    right: 21px;
+    padding: 2px;
+    border-radius: 50%;
+    background: lime;
+    width: 7px;
+    height: 7px;
+    display: inline-block;
 }
 
 .bell:hover{
-    border-right: 2px solid lime;
+    scale:(0.7);
 
 }
 
