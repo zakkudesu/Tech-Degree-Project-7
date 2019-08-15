@@ -443,7 +443,7 @@ h3 {
 
 .widget-container-full {
   padding-bottom: 1.25em;
-  width: calc(100vw -55px);
+  width: calc(100vw - 55px);
 }
 
 .traffic-nav {
@@ -572,7 +572,7 @@ h3 {
 
   .traffic-chart {
     display: flex;
-    width: calc(100vw- 55px);
+    width: calc(100vw - 55px);
   }
 
   .stats {
@@ -757,7 +757,6 @@ h3 {
 .headline {
   background-color: #fff;
   padding: 0.75em 0.75em;
-  font-weight: 375;
 }
 
 .profile-name {
