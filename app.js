@@ -1,5 +1,5 @@
 const alert = document.getElementById("alert");
-var trafficCanvas = document.getElementById("traffic-chart")
+var trafficCanvas = document.getElementById("traffic-chart");
 const dailyCanvas = document.getElementById("daily-chart");
 
 
@@ -9,12 +9,12 @@ alert.innerHTML =
     <p><strong>Alert: </strong> You have <strong> 8 </strong> new connections to approve.</p>
     <p class="alert-banner-close">x</p>
 </div>
-`
+`;
 // Close Alert Banner
 alert.addEventListener('click', e => {
     const element = e.target;
     if(element.classList.contains("alert-banner-close")) {
-        alert.style.display = "none"
+        alert.style.display = "none";
     }
 });
 
@@ -125,7 +125,7 @@ const mobileOptions = {
         fontStyle: 'bold'
 		}
 	}
-}
+};
 
 let mobileChart = new Chart(mobileCanvas, {
     type: 'doughnut',
@@ -145,7 +145,7 @@ const messageContainer = document.getElementById("messageContainer");
 sendMessage.addEventListener('click', (e)=> {
     const denyMessage = document.createElement('p');
     denyMessage.textContent = 'Please complete all sections of the form';
-    denyMessage.className = 'remove'
+    denyMessage.className = 'remove';
     const sendMessage = document.createElement('p');
     sendMessage.textContent = 'Your message was sent';
 
